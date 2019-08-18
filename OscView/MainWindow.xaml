@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OscView"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" SizeToContent="WidthAndHeight">
     <Grid>
+        <DockPanel HorizontalAlignment="Left" LastChildFill="False" VerticalAlignment="Top" >
+            <WrapPanel  DockPanel.Dock="Top" ItemHeight="20">
+                <Menu x:Name="Menu"  Width="Auto">
+                    <MenuItem Name="FileMenu" MinWidth="50" Header="Файл">
+                        <MenuItem Name="OpenFile" Header="Открыть.." Width="Auto" Height="Auto" Click="OpenFile_Click" />
+                    </MenuItem>
+                    
+                </Menu>
+            </WrapPanel>
+        </DockPanel>
         
+
     </Grid>
 </Window>
